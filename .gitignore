@@ -1,0 +1,7 @@
+node_modules/
+images/
+donatorListFormatted.txt
+donators.json
+initFile.json
+panelUpdate.js
+test.js

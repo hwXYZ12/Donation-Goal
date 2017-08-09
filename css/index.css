@@ -1,0 +1,97 @@
+body{
+    background-color: rgba(100,101,102, 1.0);
+    border-width: 20px;
+    border-radius: 3%;
+    border-style: solid;
+}
+
+#nameAndAmount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 70px;
+}
+
+#aboveProgressText{
+    display: flex;
+    flex-direction: row;
+}
+
+#donationGoal{
+    margin: auto;
+}
+
+#donationProgressText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#donationProgressBar{
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5%;
+    width: 99%;
+    height: 60px;
+    margin: auto;
+    box-shadow: 0.5em 0.5em 1em 0.1em;
+}
+#donationProgressBar div{
+    background-color: green;
+    width: 0%;
+    height: 100%;
+}
+
+#scrollingMessage{
+    display: inline-block;
+    margin-top: 2%;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.muhFont{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black,
+                0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black,
+                0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black,
+                0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black;
+}
+
+.marquee {
+
+    margin-top: 1%;
+    margin-left: 0.5%;
+    margin-right: 1%;
+
+    height: 70px;
+    width: 99%;
+
+    word-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee div {
+
+    display: block;
+    width: 6000px;
+    height: 60px;
+
+    position: absolute;
+    overflow: hidden;
+
+    animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+    float: left;
+}
+
+@keyframes marquee {
+    0% { left: 100%; }
+    100% { left: -100px; }
+}
